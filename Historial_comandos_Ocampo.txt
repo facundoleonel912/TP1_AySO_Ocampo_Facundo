@@ -1,0 +1,47 @@
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+mkdir repogit
+cd repogit
+git clone git@github.com:facundoleonel912/TP1_AySO_Ocampo_Facundo.git
+cd TP1_AySO_Ocampo_Facundo/
+pwd
+ls -l
+cat /etc/os-release
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i home_url /etc/os-release
+touch datos_url.txt
+grep -i home_url /etc/os-release > datos_url.txt
+id -un
+echo Usuario=$(whoami) > datos_usuario.txt
+git add .
+git config --global user.email "facuocampo656@gmail.com"
+git config --global user.name "facundoleonel912"
+git commit -m "ADD: agregado 1er
+ejercicio sobre datos_usuario.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >>
+datos_usuario.txt
+grep "model name" /proc/cpuinfo | head -n1 >>
+datos_usuario.txt
+grep "model name" /proc/cpuinfo | head -n1 >>datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "feat: Añadiendo información de CPU"
+cat <<EOF >> README.md
+Alumno: Facundo Ocampo
+División: 113
+Turno: Mañana
+EOF
+
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+mkdir -p ~/materia{1,2}/uni{1,2,3}
+sudo apt update
+sudo apt install tree
+exit
+sudo apt install tree
+mkdir -p ~/materia{1,2}/uni{1,2,3}
+tree ~/materia1 ~/materia2
+history -a
